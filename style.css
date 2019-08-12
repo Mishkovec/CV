@@ -1,27 +1,107 @@
 body {
-    width: 1024px;
-    margin-left: auto;
-    margin-right: auto;
+  margin: 0;
+  padding: 0;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1366px;
+  background: #CCC;
 }
+
 h1 {
-    font-size: 30px;
+  color: #FFF;
+  -webkit-transform: translate(50%, 50%);
+          transform: translate(50%, 50%);
 }
+
 h2 {
-    font-size: 26px;    
+  margin: 0;
+  padding: 5%;
+  color: #00650C;
 }
-.info img {
-    width: 200px;
-    height: 200px;
-    position: absolute;
-    top: 1px;
-    right: 200px;
-    transform: scale(0.8);    
+
+h3 {
+  color: #827847;
 }
-p {
-    font-size: 16px;
-    font-family: Arial, Helvetica, sans-serif;
-    line-height: 1.5;
+
+.top {
+  width: 100%;
+  height: 40em;
+  background: url("./assets/DSC_0267.JPG") no-repeat;
+  background-size: cover;
 }
-.summary p, .english p {
-    text-align: justify;
+
+.top .header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  background: white;
+  color: black;
+  opacity: 0.5;
 }
+
+.top .header .menu {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.about-container {
+  background: #FFF;
+}
+
+.about-container .aboutme {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.about-container .aboutme .summary {
+  width: 40%;
+}
+
+.about-container .aboutme .education {
+  width: 40%;
+}
+
+.about-container .aboutme .english {
+  width: 80%;
+}
+
+.skills {
+  background: #D9FBFF;
+}
+
+.examples {
+  background: #FFF;
+}
+
+.contacts {
+  background: url("./assets/minsk-state-map.jpg") no-repeat;
+  background-size: cover;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.contacts .contacts-info {
+  margin: 5%;
+  padding: 2%;
+  width: 40%;
+  background: #D9FBFF;
+}
+/*# sourceMappingURL=style.css.map */
