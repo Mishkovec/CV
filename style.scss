@@ -3,7 +3,8 @@ body {
     padding: 0;
     margin-left: auto;
     margin-right: auto;
-    max-width: 1366px; 
+    max-width: 1366px;
+    overflow-X: hidden; 
     background: #CCC;
     // color: white;   
 }
@@ -11,15 +12,23 @@ $width-block: 40%;
 $background-color: #D9FBFF;
 h1 {
     color: #FFF;
-    transform: translate(50%, 50%);
+    font-size: 4em;    
 }
 h2 {
     margin: 0;
-    padding: 5%;
+    padding: 3%;
     color: #00650C;
 }
 h3 {
     color: #827847;
+}
+a {
+    text-decoration: none;
+    color: blue;
+    
+    &:visited {
+        color: blue;
+    }
 }
 .top {
     width: 100%;
@@ -28,8 +37,7 @@ h3 {
     background-size: cover;   
     .header {
         display: flex;
-        justify-content: flex-end;
-        // position: fixed;
+        justify-content: flex-end;        
         background: white;
         color: black;
         opacity: 0.5; 
@@ -38,7 +46,22 @@ h3 {
             display: flex;
             list-style: none;
             justify-content: space-around;
+            font-size: 1.5em;
+            font-weight: bold;
+            li {
+                &:hover {
+                    color: blue;                    
+                }
+            }
         }
+    }
+    .top-info {
+        height: 80%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        color: #FFF;
     }
 }
 .about-container {
@@ -61,9 +84,82 @@ h3 {
 }
 .skills {
     background: $background-color;
+    .skills-blocks {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        .skills-block {
+            width: 5em;
+            height: 5em;
+            margin-top: 3%;
+            margin-left: 5%;
+            margin-right: 3%;
+            background: #00650C;            
+        }
+        .html {
+            background: url(./assets/html.png) no-repeat;
+            background-size: contain;
+        }
+        .css {
+            background: url(./assets/css.png) no-repeat;
+            background-size: contain;
+        }
+        .js {
+            background: url(./assets/javascript-logo-8892AEFCAC-seeklogo.com.png) no-repeat;
+            background-size: contain;
+        }
+        .webpack {
+            background: url(./assets/webpack.png) no-repeat;
+            background-size: contain; 
+        }
+        .less {
+            background: url(./assets/1200px-LESS_Logo.svg.png) no-repeat;
+            background-size: contain; 
+            background-position-y: 50%;  
+        }
+        .sass {
+            background: url(./assets/sass.png) no-repeat;
+            background-size: contain;  
+        }
+        .jquery {
+            background: url(./assets/jquery-10-1175155.png) no-repeat;
+            background-size: contain;  
+        }
+        .ajax {
+            background: url(./assets/ajax.png) no-repeat;
+            background-size: contain;  
+        }
+        .npm {
+            background: url(./assets/npm.png) no-repeat;
+            background-size: contain;  
+        }
+        .react {
+            background: url(./assets/pngfind.com-map-marker-png-878756.png) no-repeat;
+            background-size: contain;  
+        }
+        .redux {
+            background: url(./assets/redux.png) no-repeat;
+            background-size: contain;  
+        }
+        .git {
+            background: url(./assets/git.svg) no-repeat;
+            background-size: contain;  
+        }
+        .ps {
+            background: url(./assets/photoshop.png) no-repeat;
+            background-size: contain;
+            margin-bottom: 5%;  
+        }
+
+    }
 }
 .examples {
     background: #FFF;
+    p {
+        margin: 0;
+        padding: 1%;
+        padding-left: 5%;
+    }
 }
 .contacts {
     background: url('./assets/minsk-state-map.jpg') no-repeat;

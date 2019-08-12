@@ -12,15 +12,18 @@
         <section class="top">
             <div class="header">        
                 <ul class="menu">
-                    <li>About Me</li>
-                    <li>Skills</li>
-                    <li>Work Examples</li>
-                    <li>Contacts</li>
+                    <li><a href="#aboutme">About Me</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#examples">Work Examples</a></li>
+                    <li><a href="#contacts">Contacts</a></li>
                 </ul>        
             </div>
-            <h1>Andrei Mishkovec</h1>
+            <div class="top-info">
+                <h1>Andrei Mishkovec</h1>
+                <!-- <p>My Github</p> -->
+            </div>            
         </section>        
-        <section class="about-container"> 
+        <section class="about-container" id="aboutme"> 
                 <h2>About Me</h2> 
             <div class="aboutme">
             <div class="summary">
@@ -51,11 +54,25 @@
                 </div>
             </div>           
         </section>    
-        <section class="skills">
+        <section class="skills" id="skills">
             <h2>Skills</h2>
-            <p>HTML5, CSS3, CSS3 Animation, JavaScript, GIT, WebPack, LESS/SASS, jQuery, AJAX, React, good knowledge Photoshop.</p>
+            <div class="skills-blocks">
+                <div class="skills-block html"></div>
+                <div class="skills-block css"></div>
+                <div class="skills-block js"></div>
+                <div class="skills-block webpack"></div>
+                <div class="skills-block less"></div>
+                <div class="skills-block sass"></div>
+                <div class="skills-block jquery"></div>
+                <div class="skills-block ajax"></div>
+                <div class="skills-block npm"></div>
+                <div class="skills-block react"></div>
+                <div class="skills-block redux"></div>
+                <div class="skills-block git"></div>
+                <div class="skills-block ps"></div>
+            </div>
         </section>
-        <section class="examples">
+        <section class="examples" id="examples">
             <h2>Work examples </h2>
             <p>
                 <strong> Website ArtActive (React):</strong> <a href="https://mishkovec.github.io/Artactive/">https://mishkovec.github.io/Artactive/</a>;
@@ -73,7 +90,7 @@
                     <strong>Winter CSS-pictures competition:</strong> <a href="http://jsfiddle.net/Mishkovec/qgL0nbry/1/embedded/result/">http://jsfiddle.net/Mishkovec/qgL0nbry/1/embedded/result/</a>
             </p>            
         </section>   
-        <section class="contacts">
+        <section class="contacts" id="contacts">
             <div class="contacts-info">
                 <h2>Contacts</h2>              
                 <p>

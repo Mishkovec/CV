@@ -4,23 +4,32 @@ body {
   margin-left: auto;
   margin-right: auto;
   max-width: 1366px;
+  overflow-X: hidden;
   background: #CCC;
 }
 
 h1 {
   color: #FFF;
-  -webkit-transform: translate(50%, 50%);
-          transform: translate(50%, 50%);
+  font-size: 4em;
 }
 
 h2 {
   margin: 0;
-  padding: 5%;
+  padding: 3%;
   color: #00650C;
 }
 
 h3 {
   color: #827847;
+}
+
+a {
+  text-decoration: none;
+  color: blue;
+}
+
+a:visited {
+  color: blue;
 }
 
 .top {
@@ -50,6 +59,30 @@ h3 {
   list-style: none;
   -ms-flex-pack: distribute;
       justify-content: space-around;
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+.top .header .menu li:hover {
+  color: blue;
+}
+
+.top .top-info {
+  height: 80%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #FFF;
 }
 
 .about-container {
@@ -83,8 +116,101 @@ h3 {
   background: #D9FBFF;
 }
 
+.skills .skills-blocks {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.skills .skills-blocks .skills-block {
+  width: 5em;
+  height: 5em;
+  margin-top: 3%;
+  margin-left: 5%;
+  margin-right: 3%;
+  background: #00650C;
+}
+
+.skills .skills-blocks .html {
+  background: url(./assets/html.png) no-repeat;
+  background-size: contain;
+}
+
+.skills .skills-blocks .css {
+  background: url(./assets/css.png) no-repeat;
+  background-size: contain;
+}
+
+.skills .skills-blocks .js {
+  background: url(./assets/javascript-logo-8892AEFCAC-seeklogo.com.png) no-repeat;
+  background-size: contain;
+}
+
+.skills .skills-blocks .webpack {
+  background: url(./assets/webpack.png) no-repeat;
+  background-size: contain;
+}
+
+.skills .skills-blocks .less {
+  background: url(./assets/1200px-LESS_Logo.svg.png) no-repeat;
+  background-size: contain;
+  background-position-y: 50%;
+}
+
+.skills .skills-blocks .sass {
+  background: url(./assets/sass.png) no-repeat;
+  background-size: contain;
+}
+
+.skills .skills-blocks .jquery {
+  background: url(./assets/jquery-10-1175155.png) no-repeat;
+  background-size: contain;
+}
+
+.skills .skills-blocks .ajax {
+  background: url(./assets/ajax.png) no-repeat;
+  background-size: contain;
+}
+
+.skills .skills-blocks .npm {
+  background: url(./assets/npm.png) no-repeat;
+  background-size: contain;
+}
+
+.skills .skills-blocks .react {
+  background: url(./assets/pngfind.com-map-marker-png-878756.png) no-repeat;
+  background-size: contain;
+}
+
+.skills .skills-blocks .redux {
+  background: url(./assets/redux.png) no-repeat;
+  background-size: contain;
+}
+
+.skills .skills-blocks .git {
+  background: url(./assets/git.svg) no-repeat;
+  background-size: contain;
+}
+
+.skills .skills-blocks .ps {
+  background: url(./assets/photoshop.png) no-repeat;
+  background-size: contain;
+  margin-bottom: 5%;
+}
+
 .examples {
   background: #FFF;
+}
+
+.examples p {
+  margin: 0;
+  padding: 1%;
+  padding-left: 5%;
 }
 
 .contacts {
