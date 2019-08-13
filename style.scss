@@ -166,10 +166,56 @@ a {
 }
 .examples {
     background: #FFF;
-    p {
-        margin: 0;
-        padding: 1%;
-        padding-left: 5%;
+    // p {
+    //     margin: 0;
+    //     padding: 1%;
+    //     padding-left: 5%;
+    // }
+    .examples-cards {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        .examples-card {
+            width: 12em;
+            height: 10em;
+            margin: 2%;
+            background: #827847;
+            display: flex;
+            justify-content: center;
+            align-items: flex-end;
+            a {
+                text-align: center;
+                background: #D9FBFF;
+                opacity: 0.8;
+                width: 100%;
+                &:hover {
+                    color: #00650C;
+                }
+            }
+        }
+        .artactive {
+            background: url('./assets/artactive.png') no-repeat;
+            background-size: contain;
+        }
+        .youtube {
+            background: url('./assets/youtube-client.png') no-repeat;
+            background-size: contain;
+            background-position-y: 40%;
+        }
+        .aurius {
+            background: url('./assets/aurius.png') no-repeat;
+            background-size: contain;
+        }
+        .belcanton {
+            background: url('./assets/belkanton.png') no-repeat;
+            background-size: contain;
+            background-position-y: 40%;
+        }
+        .css-animation {
+            background: url('./assets/css-animation.png') no-repeat;
+            background-size: contain;
+            background-position-x: 50%;
+        }
     }
 }
 .contacts {

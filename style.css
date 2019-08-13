@@ -221,10 +221,70 @@ a:visited {
   background: #FFF;
 }
 
-.examples p {
-  margin: 0;
-  padding: 1%;
-  padding-left: 5%;
+.examples .examples-cards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.examples .examples-cards .examples-card {
+  width: 12em;
+  height: 10em;
+  margin: 2%;
+  background: #827847;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+.examples .examples-cards .examples-card a {
+  text-align: center;
+  background: #D9FBFF;
+  opacity: 0.8;
+  width: 100%;
+}
+
+.examples .examples-cards .examples-card a:hover {
+  color: #00650C;
+}
+
+.examples .examples-cards .artactive {
+  background: url("./assets/artactive.png") no-repeat;
+  background-size: contain;
+}
+
+.examples .examples-cards .youtube {
+  background: url("./assets/youtube-client.png") no-repeat;
+  background-size: contain;
+  background-position-y: 40%;
+}
+
+.examples .examples-cards .aurius {
+  background: url("./assets/aurius.png") no-repeat;
+  background-size: contain;
+}
+
+.examples .examples-cards .belcanton {
+  background: url("./assets/belkanton.png") no-repeat;
+  background-size: contain;
+  background-position-y: 40%;
+}
+
+.examples .examples-cards .css-animation {
+  background: url("./assets/css-animation.png") no-repeat;
+  background-size: contain;
+  background-position-x: 50%;
 }
 
 .contacts {
