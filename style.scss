@@ -62,6 +62,21 @@ a {
         justify-content: center;
         align-items: center;
         color: #FFF;
+        .my-github {
+            width: $width-block /2 +10;
+            display: flex;
+            justify-self: flex-end;            
+            .icon {
+                width: 2em;
+                height: 2em;
+                margin-right: 2%;                
+            }
+            .git {
+                background: url(./assets/git.svg) no-repeat;
+                background-size: contain; 
+                filter: invert(100%); 
+            }
+        }
         a {
             font-size: 1.5em;
             color: #FFF;
@@ -69,7 +84,7 @@ a {
                 color: #FFF; 
             }
             &:hover {
-                color: blue; 
+                text-shadow: 0 0 50px greenyellow;
                 font-weight: bold;                
             }
         }
@@ -239,6 +254,12 @@ a {
         .top-info {
             a {
                 font-size: 1em;
+            }
+            .my-github {                
+                .icon {
+                    width: 1em;
+                    height: 1em;                                    
+                }
             }
         }        
     }
