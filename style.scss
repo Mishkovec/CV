@@ -62,6 +62,17 @@ a {
         justify-content: center;
         align-items: center;
         color: #FFF;
+        a {
+            font-size: 1.5em;
+            color: #FFF;
+            &:visited {
+                color: #FFF; 
+            }
+            &:hover {
+                color: blue; 
+                font-weight: bold;                
+            }
+        }
     }
 }
 .about-container {
@@ -173,6 +184,47 @@ a {
         background: $background-color;
     }
 }
-@media only screen and (max-width:768px){
-
+@media only screen and (max-width:540px){
+    h1 {
+        font-size: 2.5em;
+    }
+    .top {
+        .header {
+            .menu {
+                font-size: 1em;
+            }
+        }
+        .top-info {
+            a {
+                font-size: 1em;
+            }
+        }        
+    }
+    .about-container {
+        .aboutme {
+            flex-direction: column;
+            align-items: center;
+            .summary, .education {
+                width: $width-block *2;
+            }
+        }
+    }
+    .contacts {
+        .contacts-info {
+            width: $width-block *2;
+        }        
+    }
+}
+@media only screen and (max-width:375px){
+    h1 {
+        font-size: 2em;
+    }
+    .top {
+        .header {
+            .menu {
+                font-size: 0.8em;
+            }
+        }
+                
+    }
 }

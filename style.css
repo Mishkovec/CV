@@ -85,6 +85,20 @@ a:visited {
   color: #FFF;
 }
 
+.top .top-info a {
+  font-size: 1.5em;
+  color: #FFF;
+}
+
+.top .top-info a:visited {
+  color: #FFF;
+}
+
+.top .top-info a:hover {
+  color: blue;
+  font-weight: bold;
+}
+
 .about-container {
   background: #FFF;
 }
@@ -229,5 +243,41 @@ a:visited {
   padding: 2%;
   width: 40%;
   background: #D9FBFF;
+}
+
+@media only screen and (max-width: 540px) {
+  h1 {
+    font-size: 2.5em;
+  }
+  .top .header .menu {
+    font-size: 1em;
+  }
+  .top .top-info a {
+    font-size: 1em;
+  }
+  .about-container .aboutme {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .about-container .aboutme .summary, .about-container .aboutme .education {
+    width: 80%;
+  }
+  .contacts .contacts-info {
+    width: 80%;
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  h1 {
+    font-size: 2em;
+  }
+  .top .header .menu {
+    font-size: 0.8em;
+  }
 }
 /*# sourceMappingURL=style.css.map */
