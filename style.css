@@ -280,6 +280,12 @@ a:visited {
   color: #00650C;
 }
 
+.examples .examples-cards .maleni {
+  background: url("./assets/maleni.png") no-repeat;
+  background-size: contain;
+  background-position-y: 40%;
+}
+
 .examples .examples-cards .artactive {
   background: url("./assets/artactive.png") no-repeat;
   background-size: contain;
